@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start:prod": "node server.js",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
@@ -21,6 +22,7 @@
     "@angular/router": "~10.0.6",
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.2",
+    "express": "^4.17.1",
     "jquery": "^3.5.1",
     "pg-calendar": "^1.4.31",
     "rxjs": "~6.5.5",
