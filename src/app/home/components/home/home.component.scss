@@ -1,0 +1,54 @@
+  
+.aboutus{
+	padding: 100px 0px;
+}
+.brand{
+	padding: 100px 0;
+}
+
+.ourteam{
+	padding: 50px 0;
+}
+.services{
+	padding: 50px 0;
+	background: url(/assets/images/what-bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	position: relative;
+}
+
+.contact{
+	padding: 50px 0;
+	background: #f4f1f1;
+}
+
+.services:before{
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255,171,217,0.8);
+}
+
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){
+    .aboutus,
+    .services,
+    .contact{
+        padding: 60px 0;
+	}
+	
+	.ourteam{
+		padding: 60px 0 20px;
+	}
+	
+}
+
+
+footer{
+	background: #282828;
+	padding: 60px 0;
+}

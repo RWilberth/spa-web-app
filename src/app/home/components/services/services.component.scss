@@ -1,0 +1,73 @@
+
+
+.service-heading h2{
+	color: #fff;
+	font-size: 35px;
+	font-family: 'Merienda One', cursive;
+	font-weight: normal;
+	line-height: 1.5em;
+	margin-bottom: 20px;
+}
+
+.service-heading p{
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.service-heading .btn-custom{
+	background: #fff;
+	color: #282828;
+	margin-top: 20px;
+}
+
+.service-heading .btn-custom:hover{
+	background: #282828;
+	color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+
+	.service-heading{
+		margin-bottom: 60px;
+	}
+}
+
+
+@media only screen and (max-width: 767px){
+    
+	.service-heading h2{
+		font-size: 26px;
+	}
+}
+
+
+.btn-custom{
+	display: inline-block;
+	background: #d0ae5e;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 15px;
+	padding: 14px 40px;
+	font-weight: 500;
+	min-width: 200px;
+	text-align: center;
+	transition: all 0.4s;
+	border-radius: 40px;
+}
+
+.btn-custom:hover{
+	background: #282828;
+	color: #fff;
+}
+
+
+@media only screen and (max-width: 1200px) {
+	.btn-custom{
+		min-width: auto;
+	}
+	
+	.btn-block-responsive { width: 100%; display:block; }
+}

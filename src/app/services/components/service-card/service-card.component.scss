@@ -1,0 +1,106 @@
+
+.service-box{
+	background: #fff;
+	border-radius: 14px;
+}
+
+.service-box figure{
+	border-radius: 14px 14px 0 0; 
+	overflow: hidden;
+}
+.link-custom{
+    color: #085724;
+}
+
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){
+	
+	.service-box{
+		margin-bottom: 30px;
+	}
+}
+
+.service-body{
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+
+.service-body h3{
+	color: #282828;
+	font-size: 17px;
+	text-transform: uppercase;
+	padding: 10px 0;
+}
+
+.service-body h3 span{
+	font-weight: 400;
+}
+
+.service-body p{
+	font-size: 12px;
+	color: #707070;
+	margin-bottom: 1.5em;
+}
+
+.service-body .btn-custom{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: #282828;
+	color: #d0ae5c;
+}
+
+.service-body .btn-custom:hover{
+	background: #d0ae5c;
+	color: #fff;
+}
+
+.btn-custom{
+	display: inline-block;
+	background: #d0ae5e;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 15px;
+	padding: 14px 40px;
+	font-weight: 500;
+	min-width: 200px;
+	text-align: center;
+	transition: all 0.4s;
+	border-radius: 40px;
+}
+
+.btn-custom:hover{
+	background: #282828;
+	color: #fff;
+}
+
+.container-fluid{
+	overflow: hidden;
+}
+button{
+	font-size: 12px;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.align-center{
+	text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+	.btn-custom{
+		min-width: auto;
+	}
+	button{
+		margin-bottom: 10px;
+	}
+}

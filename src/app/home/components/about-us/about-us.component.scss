@@ -1,0 +1,42 @@
+
+.about-desc h2{
+	font-size: 35px;
+	color: #282828;
+	font-weight: 500;
+	line-height: 1.3em;
+	margin-bottom: 40px;
+}
+
+.about-desc h2 span{
+	color: #FFABD9;
+	text-transform: uppercase;
+}
+
+.about-desc p{
+	color: #707070;
+	font-size: 15px;
+	line-height: 1.8em;
+	margin-bottom: 1.5em;
+}
+
+.about-image{
+	margin-top: 120px;
+}
+
+@media only screen and (max-width: 991px) {    
+	.about-image{
+		text-align: center;
+    }
+}
+
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){
+	.about-image{
+		margin-top: 60px;
+    }
+    
+	.about-desc h2{
+		font-size: 26px;
+	}
+}

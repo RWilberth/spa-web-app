@@ -1,1 +1,42 @@
-/* You can add global styles to this file, and also import other style files */
+
+.main-title{
+	text-align: center;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+
+.main-title h2{
+	display: inline-block;
+	font-size: 35px;
+	color: #282828;
+	font-family: 'Merienda One', cursive;
+	font-weight: normal;
+	position: relative;
+	padding-bottom: 30px;
+	line-height: 1.5em;
+}
+
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){    
+	.main-title{
+		margin-bottom: 40px;
+	}
+	
+	.main-title h2{
+		font-size: 22px;
+	}
+}
+/* Small Mobile Layout */
+@media only screen and (max-width: 480px) {
+	.main-title h2:before{
+		width: 30%;
+		left: 0px;
+	}
+	
+	.main-title h2:after{
+		width: 30%;
+		right: 0px;
+	}
+}

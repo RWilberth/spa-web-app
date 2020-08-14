@@ -1,0 +1,46 @@
+
+.bg-navbar .navbar-nav > .open > a,
+.bg-navbar .navbar-nav > .active > a {
+    color: #000;
+}
+
+.bg-navbar{
+	background: #FFABD9;
+	border: none;
+	border-bottom: 1px solid transparent;
+	padding: 10px 0;
+	border-radius: 0;
+	z-index: 12;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+.bg-navbar .navbar-nav>li>a:hover{
+	color: #000;
+}
+
+.bg-navbar .navbar-nav>li>a:focus{
+	color: #000;
+}
+
+.bg-navbar .navbar-nav>li>a{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 0.04em;
+	padding: 17px 15px 13px; 
+	position: relative;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+
+.navbar-toggler {
+  color: #fff;
+  border-color: #fff;
+}
+
+nav{
+    z-index: 16 !important;
+}

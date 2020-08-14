@@ -1,0 +1,43 @@
+
+.contact-box{
+	max-width: 746px;
+	margin: 0 auto;
+	background: #fff;
+	border: 10px solid #FFABD9;
+	padding: 80px 30px;
+	text-align: center;
+	box-shadow: 3px 4px 28.13px 0.87px rgba(0, 0, 0, 0.24);
+}
+
+.contact-form .form-group{
+	max-width: 480px;
+	margin: 0 auto 20px;
+}
+
+.contact-form .form-control{
+	background: #f4f1f1;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 14px;
+	height: auto;
+	resize: none;
+}
+
+.contact-info p{
+	font-size: 18px;
+	color: #aaa6a6;
+	padding-bottom: 8px;
+}
+
+.contact-info p span{
+	font-size: 20px;
+	padding-right: 10px;
+}
+
+/* Mobile Layout */
+@media only screen and (max-width: 767px){
+	.contact-box{
+		padding: 30px 20px;
+	}
+}

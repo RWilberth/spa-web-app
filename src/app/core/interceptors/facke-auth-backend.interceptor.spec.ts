@@ -1,4 +1,4 @@
-import { FackeAuthBackendInterceptor } from './facke-auth-backend-interceptor';
+import { FackeAuthBackendInterceptor } from './facke-auth-backend.interceptor';
 
 describe('FackeAuthBackendInterceptor', () => {
   it('should create an instance', () => {
