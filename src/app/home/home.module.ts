@@ -13,6 +13,9 @@ import { ServicesComponent } from './components/services/services.component';
 import { ServicesModule } from '../services/services.module';
 import { OurTeamComponent } from './components/our-team/our-team.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { GiftCardsComponent } from './components/gift-cards/gift-cards.component';
+import { ServiceDetailComponent } from './components/service-detail/service-detail.component';
+import { DefaultNavigationBarComponent } from './components/default-navigation-bar/default-navigation-bar.component';
 
 
 @NgModule({
@@ -25,7 +28,10 @@ import { FooterComponent } from './components/footer/footer.component';
     BannerComponent,
     ServicesComponent,
     OurTeamComponent,
-    FooterComponent],
+    FooterComponent,
+    GiftCardsComponent,
+    ServiceDetailComponent,
+    DefaultNavigationBarComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

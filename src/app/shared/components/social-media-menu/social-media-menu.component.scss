@@ -1,0 +1,57 @@
+
+.main{
+  position: fixed;
+  top: 50%;
+  right: 5%;
+}
+.footer-social{
+	text-align: center;
+}
+.social-buttons{
+  margin: 0px;
+  padding: 0px;
+  width: 0px;
+}
+
+
+.footer-social a{
+	width:50px;
+	height:50px;
+  font-size:25px;
+	display: inline-block;
+	border-radius: 50%;
+	color: #fff;
+	margin: 2px 4px;
+}
+
+.footer-social a:hover{
+	background: #fff;
+	color: #282828;
+}
+
+
+.btn-facebook{
+  background: #3b5998;
+}
+.btn-twitter{
+  background: #00acee;
+}
+.btn-whatsapp{
+  background: #25d366;
+}
+
+/* Small Mobile Layout */
+@media only screen and (max-width: 480px) {
+  .main{
+    right: 7%;
+  }
+
+.footer-social a{
+	width:40px;
+	height:40px;
+  font-size:18px;
+}
+	.footer-social{
+		margin-bottom: 0px;
+	}
+}

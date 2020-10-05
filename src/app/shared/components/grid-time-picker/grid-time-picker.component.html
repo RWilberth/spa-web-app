@@ -1,0 +1,7 @@
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-md-4 col-4 my-1 px-2" *ngFor="let hour of hours">
+            <div class="cell py-1">{{hour | date:'hh:mm aa'}}</div>
+        </div>
+    </div>
+</div>

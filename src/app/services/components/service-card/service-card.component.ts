@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-service-card',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() viewDetailUrl: string;
+  constructor(private router: Router, private route: ActivatedRoute) { }
+
+  @Input() hours: Array<Date>;
 
   ngOnInit(): void {
   }
