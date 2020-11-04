@@ -17,7 +17,6 @@ import { GiftCardsComponent } from './components/gift-cards/gift-cards.component
 import { ServiceDetailComponent } from './components/service-detail/service-detail.component';
 import { DefaultNavigationBarComponent } from './components/default-navigation-bar/default-navigation-bar.component';
 
-
 @NgModule({
   declarations: [
     HomeComponent,

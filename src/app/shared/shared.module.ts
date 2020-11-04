@@ -5,16 +5,24 @@ import { GridTimePickerComponent } from './components/grid-time-picker/grid-time
 import { SocialMediaMenuComponent } from './components/social-media-menu/social-media-menu.component';
 import { RouterModule } from '@angular/router';
 import { BreadcrumbNavComponent } from './components/breadcrumb-nav/breadcrumb-nav.component';
-
-
+import { CardSelectorComponent } from './components/card-selector/card-selector.component';
+import { BookingDatePickerComponent } from './components/booking-date-picker/booking-date-picker.component';
+import { NgbDatepickerModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
-  declarations: [GridTimePickerComponent, SocialMediaMenuComponent, BreadcrumbNavComponent],
+  declarations: [
+    GridTimePickerComponent,
+    SocialMediaMenuComponent,
+    BreadcrumbNavComponent,
+    CardSelectorComponent,
+    BookingDatePickerComponent,
+  ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    NgbDatepickerModule,
   ],
   exports: [
     FormsModule,
@@ -22,7 +30,9 @@ import { BreadcrumbNavComponent } from './components/breadcrumb-nav/breadcrumb-n
     RouterModule,
     GridTimePickerComponent,
     SocialMediaMenuComponent,
-    BreadcrumbNavComponent
-  ]
+    BreadcrumbNavComponent,
+    CardSelectorComponent,
+    BookingDatePickerComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

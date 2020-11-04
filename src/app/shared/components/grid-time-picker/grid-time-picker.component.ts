@@ -1,13 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-grid-time-picker',
   templateUrl: './grid-time-picker.component.html',
-  styleUrls: ['./grid-time-picker.component.scss']
+  styleUrls: ['./grid-time-picker.component.scss'],
 })
 export class GridTimePickerComponent implements OnInit {
-
+  private static DEFAULT_COL_SIZE = 3;
   hours: Array<Date>;
+  @Input() classHour = { 'col-4': true };
+  selectedHour: Date;
 
   constructor() {
     this.hours = [];
@@ -17,11 +19,15 @@ export class GridTimePickerComponent implements OnInit {
     this.init();
   }
 
-  init(): void{
-    $('.cell').click(function(){
+  isSelectedHour(hour: Date): boolean {
+    return this.selectedHour === hour;
+  }
+
+  init(): void {
+    /* $('.cell').click(function () {
       $('.cell').removeClass('select');
       $(this).addClass('select');
-    });
+    }); */
     const endDate = new Date();
     const initDate = new Date();
     initDate.setHours(8);
@@ -31,15 +37,21 @@ export class GridTimePickerComponent implements OnInit {
     this.loadTodayTestData(30, initDate, endDate);
   }
 
-  loadTodayTestData(minutesByService: number, workInit: Date, workEnds: Date): void{
+  loadTodayTestData(
+    minutesByService: number,
+    workInit: Date,
+    workEnds: Date
+  ): void {
     const currentDate = workInit;
-    do{
+    do {
       const dateToShow = new Date(currentDate.getTime());
       currentDate.setMinutes(currentDate.getMinutes() + minutesByService);
-      if (currentDate <= workEnds){
+      if (currentDate <= workEnds) {
         this.hours.push(dateToShow);
       }
-    }while (currentDate <= workEnds);
+    } while (currentDate <= workEnds);
   }
-
+  selectHour(hour: Date): void {
+    this.selectedHour = hour;
+  }
 }

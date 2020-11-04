@@ -1,0 +1,20 @@
+<div class="card card-selector" [ngClass]="{'border-info': this.isSelected()}" (click)="this.clickSelectionArea()">
+  <div class="card-header bg-transparent card-radio-selector">
+    <div class="form-check">
+      <label class="form-check-label">
+        <input
+          type="radio"
+          class="form-check-input card-input-radio"
+          name="{{radioButtonName}}"
+          [value]="this.value"
+          [(ngModel)]="this.model"
+          (ngModelChange)="this.changeSelection($event)"
+        />
+        <span class="checkmark"></span>
+      </label>
+    </div>
+  </div>
+  <div class="card-body content-data">
+    <ng-content></ng-content>
+  </div>
+</div>

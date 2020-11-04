@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { BreadcrumbNav } from '../../models/breadcrumb-nav';
 
 @Component({
   selector: 'app-breadcrumb-nav',
@@ -7,7 +8,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class BreadcrumbNavComponent implements OnInit {
 
-  @Input() urls: { routeName: string, label: string, active: boolean }[] = [];
+  @Input() urls: Array<BreadcrumbNav>;
+
+  testBoolean = false;
   constructor() { }
 
   ngOnInit(): void {
