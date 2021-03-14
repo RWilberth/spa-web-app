@@ -16,6 +16,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { GiftCardsComponent } from './components/gift-cards/gift-cards.component';
 import { ServiceDetailComponent } from './components/service-detail/service-detail.component';
 import { DefaultNavigationBarComponent } from './components/default-navigation-bar/default-navigation-bar.component';
+import { ShoppingCartComponent } from './components/shopping-cart/shopping-cart.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DefaultNavigationBarComponent } from './components/default-navigation-b
     FooterComponent,
     GiftCardsComponent,
     ServiceDetailComponent,
-    DefaultNavigationBarComponent],
+    DefaultNavigationBarComponent,
+    ShoppingCartComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,
